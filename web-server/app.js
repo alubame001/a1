@@ -1,4 +1,5 @@
 var https = require('https');
+var http = require('http');
 var express = require('express');
 
 var fs = require('fs');
@@ -36,3 +37,10 @@ console.log("Web server has started.\nPlease log on http://127.0.0.1:3001/index.
 var httpsServer = https.createServer(options, app);
 
 httpsServer.listen(3001);
+
+
+
+var httpServer = http.createServer(options, app);
+
+httpServer.listen(80);
+
