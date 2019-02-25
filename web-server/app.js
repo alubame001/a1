@@ -33,14 +33,15 @@ app.configure('production', function(){
 });
 
 console.log("Web server has started.\nPlease log on http://127.0.0.1:3001/index.html");
-/*
+
 var httpsServer = https.createServer(options, app);
 
-httpsServer.listen(3001);
-*/
+httpsServer.listen(443);
 
 
+/*
 var httpServer = http.createServer(app);
 
 httpServer.listen(80);
 
+*/
